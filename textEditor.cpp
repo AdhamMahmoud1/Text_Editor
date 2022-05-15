@@ -16,6 +16,11 @@ int main()
              << "3- Clear" << endl
              << "4- Encrypt the file content" << endl
              << "5- Decrypt the file content" << endl;
+             cout<< "6- Merge another file" << endl;
+            cout << "7- Count the number of words in the file."<<endl;
+             cout << "8- Count the number of characters in the file"<<endl;
+             cout<< "9- Count the number of lines in the file"<<endl;
+            cout << "10- Search for a word in the file"<<endl;
         cout << "Enter your choice: ";
         cin >> choice;
         cin.ignore();
@@ -36,6 +41,21 @@ int main()
         case 5:
             dencrypt();
             break;
+        case 6:
+            merge();
+            break;
+        case 7:
+            count_words();
+            break;
+        case 8:
+            count_char();
+            break;
+        case 9:
+            count_lines();
+            break;
+        case 10:
+            word_search(); 
+            break;                   
         default:
             break;
         }
